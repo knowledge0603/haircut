@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D68A981-BD8D-497A-A6E1-2F8BCAB9E766}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BHair</RootNamespace>
+    <AssemblyName>BHair</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>bhair.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormsUI.Docking, Version=2.1.3183.32032, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="XLuSharpLibrary, Version=1.2.4368.24409, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\XLuSharpLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\frmCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmCard.Designer.cs">
+      <DependentUpon>frmCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmCard_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmCard_List.Designer.cs">
+      <DependentUpon>frmCard_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmEmployee.Designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmEmployee_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmEmployee_List.Designer.cs">
+      <DependentUpon>frmEmployee_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmEmployee_Money.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmEmployee_Money.Designer.cs">
+      <DependentUpon>frmEmployee_Money.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmEmpMoney_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmEmpMoney_Add.Designer.cs">
+      <DependentUpon>frmEmpMoney_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmItems.Designer.cs">
+      <DependentUpon>frmItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmItems_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmItems_List.Designer.cs">
+      <DependentUpon>frmItems_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmMember.Designer.cs">
+      <DependentUpon>frmMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmMember_Exchange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmMember_Exchange.Designer.cs">
+      <DependentUpon>frmMember_Exchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmMember_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmMember_List.Designer.cs">
+      <DependentUpon>frmMember_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmMember_Pay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmMember_Pay.Designer.cs">
+      <DependentUpon>frmMember_Pay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmMember_Recharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmMember_Recharge.Designer.cs">
+      <DependentUpon>frmMember_Recharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmMember_Transfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmMember_Transfer.Designer.cs">
+      <DependentUpon>frmMember_Transfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmPost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmPost.Designer.cs">
+      <DependentUpon>frmPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmSubject.Designer.cs">
+      <DependentUpon>frmSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmSubject_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmSubject_List.Designer.cs">
+      <DependentUpon>frmSubject_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\frmDeposit_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\frmDeposit_Add.Designer.cs">
+      <DependentUpon>frmDeposit_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\frmPayDetail_Bonus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\frmPayDetail_Bonus.Designer.cs">
+      <DependentUpon>frmPayDetail_Bonus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\frmPays_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\frmPays_Add.Designer.cs">
+      <DependentUpon>frmPays_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\frmPays_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\frmPays_Employee.Designer.cs">
+      <DependentUpon>frmPays_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\frmPays_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\frmPays_List.Designer.cs">
+      <DependentUpon>frmPays_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\frmPays_Member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\frmPays_Member.Designer.cs">
+      <DependentUpon>frmPays_Member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\frmPays_Modify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\frmPays_Modify.Designer.cs">
+      <DependentUpon>frmPays_Modify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\frmPays_Remark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\frmPays_Remark.Designer.cs">
+      <DependentUpon>frmPays_Remark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\frmPay_OK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\frmPay_OK.Designer.cs">
+      <DependentUpon>frmPay_OK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\frmRecharge_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\frmRecharge_List.Designer.cs">
+      <DependentUpon>frmRecharge_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\frmSelectItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\frmSelectItems.Designer.cs">
+      <DependentUpon>frmSelectItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Base\frmCard.resx">
+      <DependentUpon>frmCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmCard_List.resx">
+      <DependentUpon>frmCard_List.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmEmployee.resx">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmEmployee_List.resx">
+      <DependentUpon>frmEmployee_List.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmEmployee_Money.resx">
+      <DependentUpon>frmEmployee_Money.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmEmpMoney_Add.resx">
+      <DependentUpon>frmEmpMoney_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmItems.resx">
+      <DependentUpon>frmItems.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmItems_List.resx">
+      <DependentUpon>frmItems_List.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmMember.resx">
+      <DependentUpon>frmMember.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmMember_Exchange.resx">
+      <DependentUpon>frmMember_Exchange.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmMember_List.resx">
+      <DependentUpon>frmMember_List.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmMember_Pay.resx">
+      <DependentUpon>frmMember_Pay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmMember_Recharge.resx">
+      <DependentUpon>frmMember_Recharge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmMember_Transfer.resx">
+      <DependentUpon>frmMember_Transfer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmPost.resx">
+      <DependentUpon>frmPost.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmSubject.resx">
+      <DependentUpon>frmSubject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmSubject_List.resx">
+      <DependentUpon>frmSubject_List.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business\frmDeposit_Add.resx">
+      <DependentUpon>frmDeposit_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business\frmPayDetail_Bonus.resx">
+      <DependentUpon>frmPayDetail_Bonus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business\frmPays_Add.resx">
+      <DependentUpon>frmPays_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business\frmPays_Employee.resx">
+      <DependentUpon>frmPays_Employee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business\frmPays_List.resx">
+      <DependentUpon>frmPays_List.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business\frmPays_Modify.resx">
+      <DependentUpon>frmPays_Modify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business\frmPays_Remark.resx">
+      <DependentUpon>frmPays_Remark.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business\frmPay_OK.resx">
+      <DependentUpon>frmPay_OK.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business\frmSelectItems.resx">
+      <DependentUpon>frmSelectItems.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmDeposit.resx">
+      <DependentUpon>frmDeposit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmReport_Month.resx">
+      <DependentUpon>frmReport_Month.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmSalary.resx">
+      <DependentUpon>frmSalary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmWasteBook.resx">
+      <DependentUpon>frmWasteBook.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmWasteBook_List.resx">
+      <DependentUpon>frmWasteBook_List.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemSet\ComboDate.resx">
+      <DependentUpon>ComboDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemSet\frmConfig.resx">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Report\frmDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmDeposit.Designer.cs">
+      <DependentUpon>frmDeposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmReport_Month.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmReport_Month.Designer.cs">
+      <DependentUpon>frmReport_Month.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmSalary.Designer.cs">
+      <DependentUpon>frmSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmWasteBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmWasteBook.Designer.cs">
+      <DependentUpon>frmWasteBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmWasteBook_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmWasteBook_List.Designer.cs">
+      <DependentUpon>frmWasteBook_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSet\ComboDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemSet\ComboDate.Designer.cs">
+      <DependentUpon>ComboDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSet\frmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemSet\frmConfig.Designer.cs">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bhair.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{778265EE-4F26-4739-A390-AE5510CF9C81}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

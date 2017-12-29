@@ -1,0 +1,12 @@
+D:\BHair2\Business\obj\Debug\ResolveAssemblyReference.cache
+D:\BHair2\Business\bin\Debug\BHair.Business.dll
+D:\BHair2\Business\bin\Debug\BHair.Business.pdb
+D:\BHair2\Business\bin\Debug\XLuSharpLibrary.dll
+D:\BHair2\Business\obj\Debug\BHair.Business.dll
+D:\BHair2\Business\obj\Debug\BHair.Business.pdb
+E:\项目\未分类\BHair2\Business\bin\Debug\BHair.Business.dll
+E:\项目\未分类\BHair2\Business\bin\Debug\BHair.Business.pdb
+E:\项目\未分类\BHair2\Business\bin\Debug\XLuSharpLibrary.dll
+E:\项目\未分类\BHair2\Business\obj\Debug\ResolveAssemblyReference.cache
+E:\项目\未分类\BHair2\Business\obj\Debug\BHair.Business.dll
+E:\项目\未分类\BHair2\Business\obj\Debug\BHair.Business.pdb
